@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+pydantic-settings
+openai
+chromadb
+requests
+beautifulsoup4
+ddgs

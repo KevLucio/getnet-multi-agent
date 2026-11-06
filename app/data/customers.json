@@ -1,1 +1,83 @@
-[]
+{
+  "aviso": "Datos simulados para la prueba.",
+  "customers": {
+    "cliente1988": {
+      "name": "Tienda Demo Porto Alegre",
+      "terminal": {
+        "serial": "GS-0001988",
+        "model": "Get Smart",
+        "status": "offline",
+        "last_connection": "2026-11-05T08:12:00",
+        "last_error": "NO_NETWORK"
+      },
+      "transactions": [
+        {
+          "id": "T-1001",
+          "date": "2026-11-04",
+          "amount": 250.0,
+          "currency": "BRL",
+          "method": "debit",
+          "status": "approved",
+          "settlement_status": "pending",
+          "expected_settlement_date": "2026-11-05"
+        },
+        {
+          "id": "T-1002",
+          "date": "2026-11-04",
+          "amount": 480.0,
+          "currency": "BRL",
+          "method": "credit",
+          "installments": 3,
+          "status": "approved",
+          "settlement_status": "pending",
+          "expected_settlement_date": "2026-12-04"
+        },
+        {
+          "id": "T-1003",
+          "date": "2026-11-03",
+          "amount": 120.0,
+          "currency": "BRL",
+          "method": "pix",
+          "status": "approved",
+          "settlement_status": "settled",
+          "expected_settlement_date": "2026-11-03"
+        },
+        {
+          "id": "T-1004",
+          "date": "2026-11-05",
+          "amount": 310.0,
+          "currency": "BRL",
+          "method": "credit",
+          "installments": 1,
+          "status": "declined",
+          "decline_code": "51",
+          "decline_reason": "Saldo insuficiente en la tarjeta del comprador",
+          "settlement_status": "none",
+          "expected_settlement_date": null
+        }
+      ]
+    },
+    "cliente2024": {
+      "name": "Cafetería Demo",
+      "terminal": {
+        "serial": "GC-0002024",
+        "model": "Get Clássica",
+        "status": "online",
+        "last_connection": "2026-11-05T09:40:00",
+        "last_error": null
+      },
+      "transactions": [
+        {
+          "id": "T-2001",
+          "date": "2026-11-04",
+          "amount": 85.5,
+          "currency": "BRL",
+          "method": "debit",
+          "status": "approved",
+          "settlement_status": "settled",
+          "expected_settlement_date": "2026-11-05"
+        }
+      ]
+    }
+  }
+}
